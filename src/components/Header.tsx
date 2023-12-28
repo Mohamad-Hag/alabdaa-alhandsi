@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="flex items-center py-4 px-10 justify-between">
-      <Logo size={logoSize} />
+      {/* <Logo size={logoSize} /> */}
       {isMobile ? <HeaderNavMobile /> : <HeaderNav />}
     </header>
   );

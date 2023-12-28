@@ -9,6 +9,7 @@ export default function BuildingCladding() {
     "assets/images/bc1.jpg",
     "assets/images/bc2.jpg",
     "assets/images/bc3.jpg",
+    "assets/images/bc4.jpg",
   ];
 
   const openImageViewer = useCallback((index: number) => {
@@ -42,13 +43,19 @@ export default function BuildingCladding() {
             <Image
               src={images[1]}
               onClick={() => openImageViewer(1)}
-              caption="Artificial Stone"
+              caption="Alcobond Aluminum"
               className="bc-2-img"
             />
             <Image
               src={images[2]}
               onClick={() => openImageViewer(2)}
-              caption="Alcobond Aluminum"
+              caption="Artificial Stone"
+              className="bc-3-img"
+            />
+            <Image
+              src={images[3]}
+              onClick={() => openImageViewer(3)}
+              caption="Facade Paint"
               className="bc-3-img"
             />
           </div>

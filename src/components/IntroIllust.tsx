@@ -1,4 +1,5 @@
 import useIsMobile from "../hooks/useIsMobile";
+import Logo from "./Logo";
 
 export default function IntroIllust() {
   const isMobile = useIsMobile();
@@ -7,13 +8,7 @@ export default function IntroIllust() {
 
   return (
     <div className={`${scale}`}>
-      <div className="flex items-end gap-5">
-        <div className="i-img-1 h-32 w-32 border-4 rounded-lg border-yellow-600 shadow-lg"></div>
-        <div className="i-img-2 h-24 w-24 border-4 rounded-lg border-yellow-600 shadow-lg"></div>
-      </div>
-      <div className="mt-5">
-        <div className="i-img-3 h-32 w-32 border-4 rounded-lg border-yellow-600 ml-10 shadow-lg"></div>
-      </div>
+      <Logo size="large" />
     </div>
   );
 }

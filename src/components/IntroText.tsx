@@ -7,7 +7,10 @@ export default function IntroText() {
 
   return (
     <div className={`max-w-2xl flex flex-col items-center gap-3 ${textAlign}`}>
-      <h1 className={`${headingFontSize} font-bold w-full`}>
+      <h1
+        className={`${headingFontSize} font-bold w-full`}
+        style={{ color: "#794c08" }}
+      >
         AL ABDAA AL HANDASI{" "}
         <span className="text-sm">Technical Services CO LLC</span>
       </h1>

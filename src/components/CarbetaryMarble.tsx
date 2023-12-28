@@ -8,7 +8,7 @@ export default function CarbetaryMarble() {
   const images = [
     "assets/images/cAndm1.jpg",
     "assets/images/cAndm2.jpg",
-    "assets/images/cAndm3.jpg",
+    "assets/images/cAndm3.jpg", 
     "assets/images/cAndm4.jpg",
   ];
 
@@ -40,13 +40,19 @@ export default function CarbetaryMarble() {
         <Image
           src={images[1]}
           onClick={() => openImageViewer(1)}
-          caption="Flooring"
+          caption="Wood Flooring"
           className="cAndm-2-img"
         />
         <Image
           src={images[2]}
           onClick={() => openImageViewer(2)}
-          caption="Outdoor Kitchen"
+          caption="Marble Flooring"
+          className="cAndm-3-img"
+        />
+        <Image
+          src={images[3]}
+          onClick={() => openImageViewer(3)}
+          caption="Outdoor Kitchen & Barbecue"
           className="cAndm-3-img"
         />
       </div>
