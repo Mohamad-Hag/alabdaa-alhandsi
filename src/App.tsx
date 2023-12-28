@@ -8,7 +8,6 @@ import Services from "./components/Services";
 function App() {
   return (
     <div className="App">
-      {/* <div className="h-10 w-10 bg-blue-700 rounded-full fixed z-5"></div> */}
       <Floating />
       <div className="Content">
         <Intro />

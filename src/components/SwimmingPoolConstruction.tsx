@@ -1,4 +1,22 @@
+import { useCallback, useState } from "react";
+import Image from "./Image";
+import ReactSimpleImageViewer from "react-simple-image-viewer";
+
 export default function SwimmingPoolConstruction() {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const images = ["assets/images/spc1.jpg", "assets/images/spc2.jpg"];
+
+  const openImageViewer = useCallback((index: number) => {
+    setCurrentImage(index);
+    setIsViewerOpen(true);
+  }, []);
+
+  const closeImageViewer = () => {
+    setCurrentImage(0);
+    setIsViewerOpen(false);
+  };
+
   return (
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-2">
@@ -14,25 +32,27 @@ export default function SwimmingPoolConstruction() {
         </div>
       </div>
       <div className="spm-images flex items-center px-4 py-2 gap-4 overflow-auto">
-        <div>
-          <img
-            loading="lazy"
-            className="spc-1-img"
-            alt=""
-            src="assets/images/spc1.jpg"
-          />
-          <caption>Swimming Pool Cleaning</caption>
-        </div>
-        <div>
-          <img
-            loading="lazy"
-            className="spc-2-img"
-            alt=""
-            src="assets/images/spc2.jpg"
-          />
-          <caption>Pool Renovation</caption>
-        </div>
+        <Image
+          src={images[0]}
+          onClick={() => openImageViewer(0)}
+          caption="Concrete Pools"
+          className="spc-1-img"
+        />
+        <Image
+          src={images[1]}
+          onClick={() => openImageViewer(1)}
+          caption="Fiberglass Pools"
+          className="spc-2-img"
+        />
       </div>
+      {isViewerOpen && (
+        <ReactSimpleImageViewer
+          src={images}
+          onClose={closeImageViewer}
+          currentIndex={currentImage}
+          closeOnClickOutside={true}
+        />
+      )}
     </div>
   );
 }

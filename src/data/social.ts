@@ -35,7 +35,7 @@ const social: Social = {
   },
   phone: {
     linkText: "+971 56 594 3270",
-    link: "tel:+971 56 594 3270",
+    link: "tel:971565943270",
     name: "Phone",
   },
 };

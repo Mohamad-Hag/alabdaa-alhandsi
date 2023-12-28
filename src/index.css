@@ -44,13 +44,6 @@ img {
   margin: 0 auto !important;
 }
 body {
-  background: radial-gradient(
-    circle at -100%,
-    white,
-    white 50%,
-    white 75%,
-    #ca8a0410 75%
-  ) !important;
   scroll-behavior: smooth;
 }
 ::selection {
