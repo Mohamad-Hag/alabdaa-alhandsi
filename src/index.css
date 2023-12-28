@@ -32,13 +32,7 @@
   box-sizing: border-box;
 }
 body {
-  background: radial-gradient(
-    circle at 100%,
-    #ca8a0430,
-    #ca8a0430 50%,
-    white 75%,
-    #ca8a0430 75%
-  ) !important;
+  
 }
 button,
 a,
