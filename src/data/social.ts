@@ -8,6 +8,7 @@ interface Social {
   facebook: SocialItem;
   instagram: SocialItem;
   phone: SocialItem;
+  phone1: SocialItem;
   whatsapp: SocialItem;
   email: SocialItem;
 }
@@ -36,6 +37,11 @@ const social: Social = {
   phone: {
     linkText: "+971 56 594 3270",
     link: "tel:971565943270",
+    name: "Phone",
+  },
+  phone1: {
+    linkText: "+971 52 419 1570",
+    link: "tel:971524191570",
     name: "Phone",
   },
 };

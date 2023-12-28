@@ -25,6 +25,12 @@ export default function Contact() {
             {social.phone.linkText}
           </Link>
         </div>
+        <div className="flex gap-1 items-center">
+          <FaPhoneAlt />{" "}
+          <Link target="_blank" href={social.phone1.link}>
+            {social.phone1.linkText}
+          </Link>
+        </div>
         <div className="flex items-center justify-center gap-4">
           <Link target="_blank" href={social.facebook.link}>
             <FaFacebook size={20} className="fill-gray-400" />
