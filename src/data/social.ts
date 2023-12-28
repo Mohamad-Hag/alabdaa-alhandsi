@@ -30,7 +30,7 @@ const social: Social = {
   },
   whatsapp: {
     linkText: "Whatsapp",
-    link: "https://wa.me/971940322106",
+    link: "https://wa.me/971565943270",
     name: "Whatsapp",
   },
   phone: {
