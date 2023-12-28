@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* For local use */
+  --accent-hsl: 150, 100%, 50%;
+  --accent-trans-value: 30%;
+
+  /* For global use */
+  --accent: hsl(var(--accent-hsl));
+  --accent-trans: hsl(var(--accent-hsl), var(--accent-trans-value));
+  --secondary-txt: white;
+  --primary-txt: #090909;
+  --primary-bg: white;
+  --secondary-bg: #090909;
+  --trinary-bg: white;
+  --tran-bg: #13131390;
+  --font-body: "Roboto", sans-serif;
+  --font-heading: "Playfair Display", monospace;
+}
+* {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: var(--primary-txt);
+  -webkit-tap-highlight-color: transparent;
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+button,
+a,
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+}
+.Content {
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+body {
+  background: radial-gradient(
+    circle at -100%,
+    white,
+    white 50%,
+    white 75%,
+    #ca8a0410 75%
+  ) !important;
+  scroll-behavior: smooth;
+}
+::selection {
 }

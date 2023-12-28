@@ -1,38 +1,88 @@
-.App {
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(180deg, #ffffff, #ffffff90);
+  z-index: -10;
+}
+.intro {
+  /* background: radial-gradient(#ca8a04, #ca8a04) */
+}
+.bg-balanced {
+  background-size: cover;
+  background-position: center;
+}
+
+.i-img-1,
+.i-img-2,
+.i-img-3 {
+  background-size: cover;
+  background-position: center;
+}
+.i-img-1 {
+  background-image: url("../public/assets/images/bg.jpg");
+}
+.i-img-2 {
+  background-image: url("../public/assets/images/bg1.jpg");
+}
+.i-img-3 {
+  background-image: url("../public/assets/images/bg2.jpg");
+}
+.cAndm-1-img,
+.cAndm-2-img,
+.cAndm-3-img,
+.bc-1-img,
+.bc-2-img,
+.bc-3-img,
+.spm-1-img,
+.spm-2-img,
+.spm-3-img,
+.spm-4-img,
+.spc-1-img,
+.spc-2-img {
+  height: 250px;
+  width: 250px;
+  min-height: 250px;
+  min-width: 250px;
+  object-fit: cover;
+  object-position: center;  
+  border-radius: 10px;
+  border: 4px solid #ca8a04;
+}
+caption {
   text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  text-wrap: nowrap;
+  color: #222222;
+  padding: 5px 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cAndm-1-img:hover,
+.cAndm-2-img:hover,
+.cAndm-3-img:hover,
+.bc-1-img:hover,
+.bc-2-img:hover,
+.bc-3-img:hover,
+.spm-1-img:hover,
+.spm-2-img:hover,
+.spm-3-img:hover,
+.spm-4-img:hover,
+.spc-1-img:hover,
+.spc-2-img:hover {
+  opacity: 0.8;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.spm-2-img {
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.spm-3-img {
 }
-
-.App-link {
-  color: #61dafb;
+.floating {
+  position: fixed;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#contact * {
+  color: var(--primary-bg);
 }
