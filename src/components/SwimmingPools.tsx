@@ -5,7 +5,7 @@ export default function SwimmingPools() {
   return (
     <section className="flex flex-col gap-10 border-b-2 pb-20">
       <h3 className="font-bold text-xl flex items-center gap-3">
-        <span className="bg-yellow-600 flex items-center h-8 w-8 text-white rounded-md justify-center">
+        <span className="bg-yellow-600 flex items-center min-h-8 min-w-8 text-white rounded-md justify-center">
           1
         </span>{" "}
         Swimming Pools

@@ -4,7 +4,7 @@ export default function CarbetaryMarble() {
   return (
     <div className="flex flex-col gap-10">
       <h3 className="font-bold text-xl flex items-center gap-3">
-        <span className="bg-yellow-600 flex items-center h-8 w-8 text-white rounded-md justify-center">
+        <span className="bg-yellow-600 flex items-center min-h-8 min-w-8 text-white rounded-md justify-center">
           4
         </span>{" "}
         Carbetary and Marble

@@ -5,7 +5,7 @@ export default function SwimmingPoolConstruction() {
         <h4 className="text-lg font-bold border-l-4 pl-3 border-gray-400">
           Swimming Pool Construction
         </h4>
-        <div>
+        <div className="ml-4">
           <p className="text-gray-700">
             Design and construction of all types of swimming pools
           </p>

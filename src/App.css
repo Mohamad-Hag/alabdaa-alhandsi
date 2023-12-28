@@ -86,3 +86,6 @@ caption {
 #contact * {
   color: var(--primary-bg);
 }
+h2, h3, h4 {
+  margin-left: 1em !important;
+}
